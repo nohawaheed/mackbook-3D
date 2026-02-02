@@ -32,6 +32,10 @@
     #ff2e54 68%,
     #ff9004
   );
+  --skyblue: #c8d8e0;
+  --silver: #e3e4e6;
+  --starlight: #f0e4d3;
+  --midnight: #2e3642;
 }
 
 @theme {
@@ -54,7 +58,7 @@ html {
 body {
   width: 100vw;
   overflow-x: hidden;
-  background-color: #000;
+  background-color: #070707;
   color: var(--color-dark-100);
   font-family: var(--font-semibold);
 }
@@ -92,7 +96,7 @@ body {
     @apply w-screen fixed top-0 left-0 z-50 flex-center bg-black min-h-[7vh];
 
     nav {
-      @apply container mx-auto flex-between px-5 2xl:px-0;
+      @apply container mx-auto flex-between px-5;
 
       img {
         @apply cursor-pointer hover:-translate-y-0.5 transition-all duration-300 ease-in-out;

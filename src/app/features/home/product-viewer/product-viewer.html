@@ -1,0 +1,35 @@
+<section id="product-viewer">
+  <h2>Take a closer look.</h2>
+  <div class="controls">
+    <p class="info">
+      MackbookPro 16" in Silver / Space Black
+    </p>
+    <div class="flex-center gap-5 mt-5">
+      <div class="color-control">
+        <div class="bg-(--skyblue)" [class]="{'active' : this.mackbook.color === '#c8d8e0'}"
+          (click)="this.mackbook.setColor('#c8d8e0')">
+        </div>
+        <div class="bg-(--silver)" [class]="{'active' : this.mackbook.color === '#e3e4e6'}"
+          (click)="this.mackbook.setColor('#e3e4e6')">
+        </div>
+        <div class="bg-(--starlight)" [class]="{'active' : this.mackbook.color === '#f0e4d3'}"
+          (click)="this.mackbook.setColor('#f0e4d3')">
+        </div>
+        <div class="bg-(--midnight)" [class]="{'active' : this.mackbook.color === '#2e3642'}"
+          (click)="this.mackbook.setColor('#2e3642')">
+        </div>
+      </div>
+      <div class="size-control">
+        <div [class]="mackbook.scale === 0.06 ? 'bg-white text-black' : 'bg-black text-white'"
+          (click)="this.mackbook.setScale(0.06)">
+          <p>14"</p>
+        </div>
+        <div [class]="mackbook.scale === 0.08 ? 'bg-white text-black' : 'bg-black text-white'"
+          (click)="this.mackbook.setScale(0.08)">
+          <p>16"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-canvas></app-canvas>
+</section>

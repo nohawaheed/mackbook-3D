@@ -1,0 +1,49 @@
+@if (gltf.value(); as gltf) {
+
+<app-studio-light></app-studio-light>
+
+<ngt-group [position]="[0,0,0]" [scale]="this.mackbook.scale" [dispose]="null">
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_10.geometry"
+    [material]="gltf.materials.PaletteMaterial001" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_16.geometry"
+    [material]="gltf.materials.zhGRTuGrQoJflBD" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_20.geometry"
+    [material]="gltf.materials.PaletteMaterial002" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_22.geometry"
+    [material]="gltf.materials.lmWQsEjxpsebDlK" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_30.geometry"
+    [material]="gltf.materials.LtEafgAVRolQqRw" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_32.geometry"
+    [material]="gltf.materials.iyDJFXmHelnMTbD" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_34.geometry"
+    [material]="gltf.materials.eJObPwhgFzvfaoZ" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_38.geometry"
+    [material]="gltf.materials.nDsMUuDKliqGFdU" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_42.geometry"
+    [material]="gltf.materials.CRQixVLpahJzhJc" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_48.geometry"
+    [material]="gltf.materials.YYwBgwvcyZVOOAA" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_54.geometry"
+    [material]="gltf.materials.SLGkCohDDelqXBu" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_58.geometry"
+    [material]="gltf.materials.WnHKXHhScfUbJQi" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_66.geometry"
+    [material]="gltf.materials.fNHiBfcxHUJCahl" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_74.geometry"
+    [material]="gltf.materials.LpqXZqhaGCeSzdu" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_82.geometry"
+    [material]="gltf.materials.gMtYExgrEUqPfln" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_96.geometry"
+    [material]="gltf.materials.PaletteMaterial003" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_107.geometry"
+    [material]="gltf.materials.JvMFZolVCdpPqjj" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_123.geometry" [rotation]="[Math.PI / 2, 0, 0]">
+    <ngt-mesh-basic-material [map]="texture.value()" />
+  </ngt-mesh>
+  <ngt-mesh castShadow receiveShadow [geometry]="gltf.nodes.Object_127.geometry"
+    [material]="gltf.materials.ZCDwChwkbBfITSW" [material.color]="mackbook.color" [rotation]="[Math.PI / 2, 0, 0]" />
+</ngt-group>
+
+<ngts-orbit-controls [options]="{ autoRotate: true, enableZoom: false }" />
+
+}
