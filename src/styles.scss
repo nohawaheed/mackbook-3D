@@ -58,7 +58,7 @@ html {
 body {
   width: 100vw;
   overflow-x: hidden;
-  background-color: #070707;
+  background-color: #000;
   color: var(--color-dark-100);
   font-family: var(--font-semibold);
 }
@@ -184,7 +184,7 @@ body {
     }
   }
 
-  #showcase {
+  .showcase {
     @apply relative;
 
     .media {
@@ -195,7 +195,7 @@ body {
       }
 
       .mask {
-        @apply absolute h-full top-0 lg:-top-20 xl:top-0;
+        @apply absolute h-full top-0;
 
         img {
           @apply h-full scale-150 lg:scale-100;
