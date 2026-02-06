@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, Signal, signal, ViewChild } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
 import { Mackbook } from '../../../core/services/mackbook/mackbook';
 import { NgtsOrbitControls } from 'angular-three-soba/controls';
 import { gltfResource, textureResource } from 'angular-three-soba/loaders';
