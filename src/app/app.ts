@@ -4,8 +4,8 @@ import { Hero } from "./features/home/hero/hero";
 import { ProductViewer } from "./features/home/product-viewer/product-viewer";
 import { Showcase } from "./features/home/showcase/showcase";
 import { injectResize } from 'ngxtension/resize';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 @Component({
   selector: 'app-root',
@@ -14,9 +14,9 @@ import { gsap } from 'gsap';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('3d-mackbook');
-  resize$ = injectResize(); // Observable<ResizeResult>
-  ngOnInit(): void {
+  constructor() {
     gsap.registerPlugin(ScrollTrigger);
   }
+  protected readonly title = signal('3d-mackbook');
+  resize$ = injectResize(); // Observable<ResizeResult>
 }
